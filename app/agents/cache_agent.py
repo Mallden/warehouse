@@ -1,8 +1,8 @@
 import asyncio
 import contextlib
 import time
-from collections.abc import Awaitable
-from typing import Any, Callable, Generic, Optional, TypeVar
+from collections.abc import Awaitable, Callable
+from typing import Any, Generic, Optional, TypeVar
 
 from app.agents import Agent
 from app.metrics import CACHE_HITS, CACHE_MISSES, CACHE_SIZE
