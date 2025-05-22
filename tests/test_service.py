@@ -1,4 +1,4 @@
-from datetime import datetime
+import datetime
 from unittest.mock import AsyncMock
 
 import pytest
@@ -53,7 +53,7 @@ async def test_handle_kafka_message(service):
     movement_data = MovementData(
         movement_id='test-movement-id',
         warehouse_id='test-warehouse-id',
-        timestamp=datetime.now(datetime.UTC),
+        timestamp=datetime.datetime.now(datetime.UTC),
         event='arrival',
         product_id='test-product-id',
         quantity=100,
