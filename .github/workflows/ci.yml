@@ -93,9 +93,3 @@ jobs:
           KAFKA_BOOTSTRAP_SERVERS: localhost:9092
         run: |
           pytest tests/ -v --cov=app --cov-report=xml
-          
-      - name: Upload coverage reports
-        uses: codecov/codecov-action@v3
-        with:
-          file: ./coverage.xml
-          fail_ci_if_error: true
