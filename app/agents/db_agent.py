@@ -60,8 +60,8 @@ class DBAgent(Agent):
                     id VARCHAR(255) PRIMARY KEY,
                     source_warehouse_id VARCHAR(255) NULL REFERENCES warehouses(id),
                     destination_warehouse_id VARCHAR(255) NULL REFERENCES warehouses(id),
-                    departure_time TIMESTAMP NULL,
-                    arrival_time TIMESTAMP NULL,
+                    departure_time TIMESTAMPTZ NULL,
+                    arrival_time TIMESTAMPTZ NULL,
                     product_id VARCHAR(255) NOT NULL REFERENCES products(id),
                     departure_quantity INTEGER NULL,
                     arrival_quantity INTEGER NULL

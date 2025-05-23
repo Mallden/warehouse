@@ -28,10 +28,14 @@
 ```bash
 # Клонировать репозиторий
 git clone <repository-url>
-cd warehouse-monitoring
+cd warehouse
 
 # Запустить все сервисы
 docker-compose up -d
 
 # Остановить все сервисы
 docker-compose down
+```
+
+# Сваггер
+![alt text](image-1.png)
