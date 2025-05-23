@@ -2,8 +2,11 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir pip setuptools wheel
+
+COPY pyproject.toml .
+
+RUN pip install --no-cache-dir .
 
 COPY . .
 
