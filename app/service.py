@@ -84,7 +84,7 @@ class WarehouseMonitoringService:
                     self.cache_agent.delete(key)
 
                 self.logger.info(
-                    f'Successfully processed {event_type} event for movement {movement_data.movement_id}' # noqa: E501
+                    f'Successfully processed {event_type} event for movement {movement_data.movement_id}'  # noqa: E501
                 )
 
                 KAFKA_MESSAGES_PROCESSED.labels(message_type=message_type).inc()

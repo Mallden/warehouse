@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+import datetime
 
 from fastapi import APIRouter, FastAPI
 from fastapi.testclient import TestClient
@@ -18,8 +18,8 @@ async def get_movement_test(movement_id: str):
         movement_id=movement_id,
         source_warehouse='warehouse-1',
         destination_warehouse='warehouse-2',
-        departure_time=datetime(2025, 2, 18, 12, 12, 56, tzinfo=timezone.utc),
-        arrival_time=datetime(2025, 2, 18, 14, 34, 56, tzinfo=timezone.utc),
+        departure_time=datetime.datetime(2025, 2, 18, 12, 12, 56, tzinfo=datetime.UTC),
+        arrival_time=datetime.datetime(2025, 2, 18, 14, 34, 56, tzinfo=datetime.UTC),
         transit_time_seconds=8520,
         product_id='product-1',
         quantity=100,
