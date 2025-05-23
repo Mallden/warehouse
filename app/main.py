@@ -19,7 +19,7 @@ config = {
     'db_user': 'postgres',
     'db_password': 'postgres',
     'db_name': 'warehouse',
-    'kafka_bootstrap_servers': 'localhost:9092',
+    'kafka_bootstrap_servers': 'kafka:29092',
     'kafka_topic': 'warehouse_movements',
     'kafka_group_id': 'warehouse_monitoring_service',
     'cache_ttl': 300,

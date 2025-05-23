@@ -1,7 +1,7 @@
 [project]
 name = "warehouse"
-version = "0.1.0"
-description = "Test work warehouse"
+version = "1.0.0"
+description = "Warehouse Monitoring Service"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi==0.101.0",
