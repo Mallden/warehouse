@@ -57,7 +57,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"api/app/tests/*" = ["E501"]
+"tests/*" = ["E501"]
 
 [tool.ruff.format]
 quote-style = "single"
